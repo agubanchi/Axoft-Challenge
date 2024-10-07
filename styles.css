@@ -1,0 +1,384 @@
+/*Motserrat Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html,body{
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*Navbar Menú*/
+.navbar{
+  background-color: #000000;
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+}
+
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232FA7DF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+}
+
+.navbar-toggler {
+  border: 2px solid #2FA7DF;
+}
+
+
+
+a.nav-link{
+  color: #ffffff;
+  position: relative;
+}
+
+a.nav-link:hover{
+  color: #c4c4c4;
+}
+
+a.active{
+  color: #2FA7DF!important;
+  border-bottom: 2px solid #2FA7DF;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a:hover{
+  background-color: #2FA7DF;
+}
+
+
+/*Scroll Down Button*/
+
+a#scroll-btn {
+  margin-top: 40px;;
+  position: relative;
+  height: 4.5em;
+  width: 2.25em;
+  border: 0.2em solid #ffffff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 3.25em;
+  border-radius: 3em;
+}
+a#scroll-btn:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+ top:0em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+
+a#scroll-btn:after {
+  position: absolute;
+  content: "Conocer Más";
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  width: 12em;
+  text-align: center;
+  left: -5.2em;
+  bottom: -2.5em;
+  font-size: 1.6em;
+  color: #ffffff;
+  letter-spacing: 3px;
+
+}
+
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(3.2em);
+    opacity: 0;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  a#scroll-btn {
+    font-size: 12px;
+  }
+}
+
+
+
+/*Scrollbar Styles*/
+  /* width */
+  ::-webkit-scrollbar {
+    background-color: #ffffff;
+    width: 8px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #187dac;
+    border-radius: 5px;
+  }
+  
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color:#ffffff
+}
+
+
+/*Hero - background*/
+header.bg_hero {
+    position: relative; /* Necesario para que el overlay esté contenido dentro del header */
+    background-image: url('./images/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+ 
+}
+
+
+
+
+
+
+
+/*Animación Slider*/
+
+  /* Velocidad de animación */
+  .animationSpeed {
+    animation-duration: 40s;
+  }
+  
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7)); 
+    }
+  }
+  
+  /* Styling */
+  .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+ 
+  
+  .slide-track {
+    animation: scroll 40s linear infinite; /* Velocidad animación*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(250px * 14); 
+  }
+  
+  .slide {
+    height: 100px;
+    width: 150px;
+  }
+
+
+
+  /*Negocio Section*/
+
+/*Hero - background*/
+
+
+section {
+  position: relative; /* Necesario para que el overlay esté contenido dentro del header */
+  background-image: url('./images/section_black.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  background-color: #000000;
+}
+
+  #negocio h2{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+
+
+  .titular mark{
+    background-color:#2FA7DF;
+    color: #ffffff;
+  }
+
+  #negocio ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent:-1em;
+  }
+
+  #negocio ul li{
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+   
+  }
+
+  #negocio .fa-check{
+    color: #2FA7DF;
+  }
+
+  .info-btn{
+    background-color: transparent;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border:1px solid #ffffff;
+  }
+
+  .info-btn:hover{
+    background-color: #2FA7DF;
+  }
+
+  .info-btn a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+ /*Fin Negocio Section*/
+
+  .parallax {
+    min-height: 400px;
+    background-image: url('./images/code.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+
+ /*Mercado Section*/
+
+
+
+ #mercado .pretitle{
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 300;
+ }
+
+ #mercado .title{
+color: #2FA7DF;
+font-size: 2.4rem;
+font-weight: 600;
+ }
+
+ #mercado .bajada{
+  color: #ffffff;
+  font-size: 1.3rem;
+ }
+
+  /*Fin Mercado Section*/
+
+
+/* Sistema Section*/
+
+
+
+
+#contacto{
+ 
+background-color: #2FA7DF;
+  min-height: 700px;
+align-items: center;
+  
+}
+
+
+
+
+#contacto .titulo{
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+#contacto .titular{
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#contacto .bajada{
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+
+}
+
+#contacto .icon{
+  margin:15px;
+  color: #ffffff;
+ 
+}
+
+/*Footer*/
+
+footer ul li .fa-brands{
+  color: #ffffff;
+}
+
+footer ul li .fa-brands:hover{
+  color: #2FA7DF;
+}
+
+
+/*Fin Sistema Section*/
+
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+
+
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .info-btn {
+      
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  
+  
+  
