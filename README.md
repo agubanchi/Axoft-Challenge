@@ -17,7 +17,7 @@
 <li>Animaciones activadas por el scroll del usuario Utilizando AOS como complemento.</li>
 <li>Submenú desplegable.</li>
 <li>Sección de posts que se actualiza dinámicamente con datos obtenidos de una API.</li>
-<li>Saludo personalizado basado en la información del formulario.</li>
+<li>Saludo personalizado basado en la información del formulario llenado en el modal ubicado en la sección de Mercado.</li>
 </ul>
 
 <h4>Instrucciones para Ejecutar el Proyecto Localmente</h4>
